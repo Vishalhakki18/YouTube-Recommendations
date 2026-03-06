@@ -8,7 +8,7 @@ function App() {
   const [video, setVideo] = useState([]);
 
   const getVideos = async () => {
-    const res=await axios.post("https://youtube-recommendations-ayhw.onrender.com",
+    const res=await axios.post("https://youtube-recommendations-ayhw.onrender.com/mood",
     {text: text});
     setVideo(res.data);
   };
